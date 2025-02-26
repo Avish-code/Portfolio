@@ -1,0 +1,51 @@
+.about {
+  background-color: black;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  text-align: center;
+  transition:ease-in .5s;
+}
+.about span{
+  font-weight: 4rem;
+  color:aqua;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.about h2 {
+  font-size: 2rem;
+  color:aqua;
+  margin-bottom: 20px;
+}
+
+.about-image {
+  width: 150px; 
+  height: 160px;
+  border-radius: 40%;
+  margin-bottom: 20px;
+  
+  object-fit: cover; 
+  box-shadow: 0 4px 15px rgb(136, 231, 238);
+}
+
+.about p {
+  font-size: 1.2rem;
+  color:white;
+  line-height: 1.6;
+}
+
+
+  .about:hover{
+    cursor: pointer;
+    transform: translateY(-10px);
+    box-shadow: 0 4px 15px rgb(136, 231, 238);
+    background-color: black;
+    
+      }
+  
+
+  

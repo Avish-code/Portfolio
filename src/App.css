@@ -1,0 +1,58 @@
+.App {
+  text-align: center;
+  background-image: url('./components/bg2.jpg');
+  /* background-color: black; */
+  background-attachment: fixed;
+  backface-visibility: visible;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+/* Flexbox container for Projects and Skills sections */
+.sections-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start; /* Ensure both sections align at the top */
+  margin: 30px auto;
+  max-width: 1200px;
+}
+
+/* Match the height of both sections to ensure alignment */
+.sections-container > section {
+  flex: 1; /* Both sections take equal space */
+  min-height: 10x; /* Set a minimum height to keep them aligned */
+}
+
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

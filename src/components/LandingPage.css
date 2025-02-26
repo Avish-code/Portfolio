@@ -1,0 +1,53 @@
+.landing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    color: rgb(109, 177, 177);
+    overflow: hidden;
+}
+
+/* Slide-in Animations */
+.slide-left {
+    font-size: 4rem;
+    font-weight: bold;
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: slideInLeft 2s forwards;
+}
+
+.slide-right {
+    font-size: 3.5rem;
+    font-weight: bold;
+    opacity: 0;
+    transform: translateX(100%);
+    animation: slideInRight 2s forwards 1s; /* Delayed start */
+}
+
+/* Hover Effect - White Border Around Each Word */
+.slide-left:hover span,
+.slide-right:hover span {
+    display: inline-block;
+    border: 2px solid white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Keyframes for Left Slide-in */
+@keyframes slideInLeft {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Keyframes for Right Slide-in */
+@keyframes slideInRight {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
