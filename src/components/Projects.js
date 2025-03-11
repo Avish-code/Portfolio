@@ -3,6 +3,7 @@ import "./Projects.css";
 import flexifitImg from "C:/portfolio/portfolio/src/components/cd1.jpg";
 import bankingImg from "C:/portfolio/portfolio/src/components/bd1.jpeg"; 
 import p1 from "C:/portfolio/portfolio/src/components/p1.jpg"; 
+import spend from "C:/portfolio/portfolio/src/components/logo.png"
 
 const Projects = () => {
   const [activeProject, setActiveProject] = useState(null);
@@ -10,6 +11,15 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
+      name: "SpendWise-Expense Management",
+      image: spend,
+      description:
+        "A Front-End Project on React js that allows user to manage its finances, visualise it and track his expenses",
+      techStack: "React",
+      role: "Front-end Develpoer",
+    },
+    {
+      id: 2,
       name: "E-commerce website: Flexifit",
       image: flexifitImg,
       description:
@@ -18,7 +28,7 @@ const Projects = () => {
       role: "Team Lead, Frontend & Backend Development, API Integration",
     },
     {
-      id: 2,
+      id: 3,
       name: "Online Banking System",
       image: bankingImg,
       description:
@@ -27,7 +37,7 @@ const Projects = () => {
       role: "Backend Developer, API Design, Security Implementation",
     },
     {
-      id: 3,
+      id: 4,
       name: "Breast tumor Classification using AI/ML",
       image: p1,
       description:
@@ -35,6 +45,7 @@ const Projects = () => {
       techStack: "React, Java, Spring Boot, MySQL, JWT Authentication",
       role: "Backend Developer, API Design, Security Implementation",
     },
+    
   ];
 
   const handleProjectClick = (id) => {
