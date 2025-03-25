@@ -13,6 +13,7 @@
 
 /* Initial Project Cards */
 .project-card {
+  margin-top: 100px;
   background-color: black;
   color: white;
   width: 250px;
@@ -23,6 +24,9 @@
   text-align: center;
   cursor: pointer;
   position: relative;
+  margin-bottom: 50px;
+  animation: slideDown 1s ease-in-out forwards; /* Apply animation */
+  opacity: 0; /* Start with invisible */
 }
 
 .project-card:hover {
@@ -114,6 +118,16 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100px); /* Start position (above screen) */
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0); /* Final position (settles in the center) */
+    opacity: 1;
   }
 }
 

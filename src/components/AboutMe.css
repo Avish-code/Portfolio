@@ -7,6 +7,8 @@
   max-width: 1200px;
   text-align: center;
   transition:ease-in .5s;
+  animation: slideDown 1s ease-in-out forwards; /* Apply animation */
+  opacity: 0; /* Start with invisible */
 }
 .about span{
   font-weight: 4rem;
@@ -44,8 +46,20 @@
     transform: translateY(-10px);
     box-shadow: 0 4px 15px rgb(136, 231, 238);
     background-color: black;
-    
-      }
+}
+
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100px); /* Start position (above screen) */
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0); /* Final position (settles in the center) */
+    opacity: 1;
+  }
+}
+
   
 
   

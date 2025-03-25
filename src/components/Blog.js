@@ -2,7 +2,8 @@ import React from 'react';
 
 const Blog=()=>{
     return(
-        <p>hakuna maatat</p>
+        <p>hakuna maatata</p>
 
     );
 };
+export default Blog;

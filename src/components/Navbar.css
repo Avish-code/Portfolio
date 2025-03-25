@@ -6,8 +6,9 @@
   padding: 1rem 2rem;
 }
 
-.navbar h1 {
+.navbar h1 a {
   color: #fff;
+  
 }
 
 .navbar ul {

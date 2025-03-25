@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   background-image: url('./components/bg2.jpg');
+  background-size: 100%;
   /* background-color: black; */
   background-attachment: fixed;
   backface-visibility: visible;

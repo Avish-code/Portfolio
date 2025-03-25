@@ -1,10 +1,12 @@
 /* Skills Section */
 .skills {
+  
   flex: 1;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
   overflow: hidden;
+  margin-bottom: 100px;
 }
 
 /* Header Styling */
@@ -22,6 +24,7 @@
 
 /* Skills List - Horizontal Layout */
 .skills-list {
+  
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -31,6 +34,7 @@
 
 /* Skill Card */
 .skill-card {
+  margin-top: 150px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -41,6 +45,8 @@
   width: 120px;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: slideDown 1s ease-in-out forwards; /* Apply animation */
+  opacity: 0; /* Start with invisible */
 }
 
 .skill-card:hover {
@@ -78,4 +84,14 @@
 
 .star.filled {
   color: aqua;
+}
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100px); /* Start position (above screen) */
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0); /* Final position (settles in the center) */
+    opacity: 1;
+  }
 }
